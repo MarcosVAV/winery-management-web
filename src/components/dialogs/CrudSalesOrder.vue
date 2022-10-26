@@ -549,6 +549,7 @@ export default {
             this.form.freight_value = parseFloat(data.freight_value)
             this.form.total_price = parseFloat(data.total_price)
             this.form.subtotal = parseFloat(data.subtotal)
+            this.form.discount_percentage = parseFloat(data.discount_percentage)
 
             data.products.forEach((e) => {
                 this.form.products_id.push(e.id)
