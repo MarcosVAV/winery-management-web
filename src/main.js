@@ -6,6 +6,16 @@ import vuetify from "./plugins/vuetify"
 
 import axios from "axios"
 import VueAxios from "vue-axios"
+import moment from "moment"
+
+import Toasted from "vue-toasted"
+
+Vue.use(Toasted, {
+    theme: "bubble",
+    position: "top-right",
+    duration: 5000,
+    type: "success",
+})
 
 Vue.use(VueAxios, axios)
 
@@ -17,5 +27,6 @@ new Vue({
     router,
     store,
     vuetify,
+    moment,
     render: (h) => h(App),
 }).$mount("#app")
